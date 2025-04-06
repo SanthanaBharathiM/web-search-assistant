@@ -1,0 +1,15 @@
+flowchart TD
+    A[User Input] --> B{Search Required?}
+    B -->|Yes| C[Generate Search Query]
+    B -->|No| I[Send Query to Assistant]
+    C --> D[Perform DuckDuckGo Search]
+    D --> E[Select Best Search Result]
+    E --> F[Scrape Webpage Content]
+    F --> G{Content Contains Needed Data?}
+    G -->|Yes| H[Append Search Result to Query]
+    G -->|No, but more results| E
+    G -->|No results left| J[Notify Search Failed]
+    H --> I
+    J --> I
+    I --> K[Stream Assistant Response]
+    K --> A
