@@ -30,7 +30,7 @@ Web Search Assistant is a Python application that leverages LLM capabilities to 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/web-search-assistant.git
+git clone https://github.com/SanthanaBharathiM/web-search-assistant
 cd web-search-assistant
 
 # Install dependencies
